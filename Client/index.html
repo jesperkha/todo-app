@@ -5,9 +5,54 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Todo app</title>
 
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rubik:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+
 		<link rel="stylesheet" href="./main.css" />
+		<link rel="stylesheet" href="./style/navbar-home.css" />
+		<link rel="stylesheet" href="./style/hero-home.css" />
+		<link rel="stylesheet" href="./style/footer-home.css" />
 	</head>
 	<body>
-		<h1>hello there</h1>
+		<section class="navbar">
+			<div class="navlinks">
+				<a href="#">Help</a>
+				<a href="#">Contact</a>
+				<a href="#">Why notes.me?</a>
+			</div>
+			<div class="login">
+				<a href="#">Log In</a>
+			</div>
+		</section>
+		<section class="hero">
+			<div class="hero-text">
+				<h1>notes.me</h1>
+				<br />
+				<p>
+					Create todo lists and notes <br />
+					with ease
+				</p>
+				<br />
+				<br />
+				<a id="getstarted" href="#">Get started</a>
+			</div>
+			<div class="hero-img">
+				<img src="./src/hero.svg" alt="" />
+			</div>
+		</section>
+		<section class="footer center">
+			<div class="footer-wrapper">
+				<div class="footer-links">
+					<a href="#">Terms & Conditions</a>
+					<a href="#">GitHub</a>
+				</div>
+				<div class="footer-author">
+					<p>©2021 Jesper Hammer</p>
+				</div>
+			</div>
+		</section>
 	</body>
 </html>

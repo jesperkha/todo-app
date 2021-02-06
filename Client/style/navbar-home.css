@@ -1,0 +1,54 @@
+a {
+	text-decoration: none;
+}
+
+.navbar {
+	font-family: "Rubik", sans-serif;
+	font-weight: 500;
+	width: 80%;
+	height: 12vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/* position: sticky;
+	top: 0; */
+	background-color: white;
+}
+
+.navlinks {
+	display: flex;
+	width: 30%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navlinks a {
+	color: #6d6d6d;
+	font-size: max(1vw, 12px);
+}
+
+/* .navlinks a:hover {
+	text-decoration: underline;
+} */
+
+.login {
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.login a {
+	font-size: max(1.1vw, 12px);
+	color: #e5a4ed;
+	border: 2px solid #e5a4ed;
+	border-radius: 50px;
+	padding: 5px;
+	width: 15%;
+	text-align: center;
+}
+
+.login a:hover {
+	background-color: #e5a4ed;
+	color: white;
+}

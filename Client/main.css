@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+	overscroll-behavior: none;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgb(39, 39, 39);
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
