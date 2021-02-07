@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>notes.me | Login</title>
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rubik:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./main.css" />
+		<link rel="stylesheet" href="./style/login.css" />
+
+		<script defer src="./js/login.js"></script>
+	</head>
+	<body>
+		<div class="form" id="form">
+			<a id="back" href="./index.html">Back</a>
+			<br />
+			<div id="error" class="error hide">
+				<p>Account does not exist</p>
+			</div>
+			<div id="exists" class="error hide">
+				<p>Account already exists</p>
+			</div>
+			<br />
+			<div class="layer">
+				<p>Username:</p>
+				<input class="input" type="text" id="username" />
+			</div>
+			<br />
+			<div class="layer">
+				<p>Password:</p>
+				<input class="input" type="password" id="password" />
+			</div>
+			<br />
+			<div class="layer buttons">
+				<a onclick="login();" class="button" href="#">Log In</a>
+				<a onclick="createAccount();" href="#">Create account</a>
+			</div>
+		</div>
+		<div id="loading" class="loading hide">
+			<img src="./src/loading.gif" alt="" />
+		</div>
+	</body>
+</html>

@@ -34,7 +34,7 @@ async function initMongoClient() {
 
 	// Hangle user login and account creation
 	const users = db.collection("Users");
-	// manageLogin(users, app);
+	manageLogin(users, app);
 	manageEntries(users, app);
 }
 

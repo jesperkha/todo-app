@@ -1,8 +1,10 @@
 module.exports = async (users, app) => {
-	let user = await users.findOne({ username: "Bob", password: "1234" });
-
 	// send user notes
-	app.get("/getCurrentState", (req, res) => {
+	app.post("/getCurrentState", async (req, res) => {
+		let user = await users.findOne({
+			username: req.body.username,
+			password: req.body.password,
+		});
 		res.json(user);
 	});
 

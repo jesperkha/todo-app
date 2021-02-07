@@ -1,7 +1,15 @@
-const user = { username: "Bob", password: "1234" };
+let user = JSON.parse(localStorage.getItem("user"));
+
+if (!user) window.location = "./login.html";
 
 (async () => {
-	const res = await fetch("/getCurrentState");
+	const res = await fetch("/getCurrentState", {
+		method: "POST",
+		headers: {
+			"Content-Type": "application/json",
+		},
+		body: JSON.stringify(user),
+	});
 	const json = await res.json();
 
 	for (let list of json.notes) {
