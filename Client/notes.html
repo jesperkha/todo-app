@@ -14,7 +14,10 @@
 		<link rel="stylesheet" href="./main.css" />
 		<link rel="stylesheet" href="./style/navbar-notes.css" />
 		<link rel="stylesheet" href="./style/notes-notes.css" />
-		<link rel="stylesheet" href="./style/footer-notes.css" />
+
+		<script defer src="./js/add-note.js"></script>
+		<script defer src="./js/add-list.js"></script>
+		<script defer src="./js/fetch-notes.js"></script>
 	</head>
 	<body>
 		<section class="navbar">
@@ -22,21 +25,12 @@
 				<p>notes.me</p>
 			</div>
 			<div class="navlinks">
-				<a href="#">Home</a>
+				<a href="./index.html">Home</a>
 				<a href="#">Contact</a>
 				<a href="#">Switch account</a>
 				<a href="#">Help</a>
 			</div>
 		</section>
-		<section class="notes">
-			<div class="list">
-				<input class="add" type="text" />
-				<div class="list-item">
-					<p class="date">06.02.21</p>
-					<p>Lorem ipsum dolor sit amet consectetur</p>
-				</div>
-			</div>
-		</section>
-		<section class="footer"></section>
+		<section class="notes" id="notes"></section>
 	</body>
 </html>

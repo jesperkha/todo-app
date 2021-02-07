@@ -1,10 +1,14 @@
 .notes {
 	width: 80%;
-	height: 70vh;
+	height: 78vh;
 	margin: 5vh 0;
 	display: flex;
 	flex-direction: row;
 	overflow-x: scroll;
+}
+
+form {
+	width: 100%;
 }
 
 .list {
@@ -15,6 +19,19 @@
 	align-items: center;
 	flex-direction: column;
 	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.list p {
+	word-break: break-all;
+}
+
+.delete {
+	font-size: max(0.8vw, 10px);
+	font-family: "Poppins", sans-serif;
+	cursor: pointer;
+	margin-bottom: 10px;
+	color: lightcoral;
 }
 
 .add {
@@ -34,6 +51,7 @@
 }
 
 .list-item {
+	transition: all 0.5s;
 	width: 100%;
 	padding: 10px;
 	background-color: #e9edfa;
@@ -59,4 +77,8 @@
 
 ::-webkit-scrollbar-thumb {
 	background-color: rgb(39, 39, 39);
+}
+
+.remove {
+	transform: scale(0);
 }

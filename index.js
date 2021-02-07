@@ -8,6 +8,7 @@ const express = require("express");
 const app = express();
 
 app.use(express.static("Client"));
+app.use(express.json());
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
@@ -25,6 +26,7 @@ const client = new MongoClient(uri, { useUnifiedTopology: true });
 
 // App methods
 const manageLogin = require("./account-manager");
+const manageEntries = require("./entry-manager");
 
 async function initMongoClient() {
 	await client.connect();
@@ -32,7 +34,8 @@ async function initMongoClient() {
 
 	// Hangle user login and account creation
 	const users = db.collection("Users");
-	manageLogin(users, app);
+	// manageLogin(users, app);
+	manageEntries(users, app);
 }
 
 initMongoClient();
